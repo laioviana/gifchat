@@ -1,0 +1,49 @@
+label{
+    font-size: small;
+    border-radius: 15px; 
+    display: inline-block; 
+    height: 14px; 
+    text-align: center; 
+    padding: 10px;
+    color: white; 
+}
+
+.background-violet {
+    background-color: palevioletred;
+
+}
+
+.background-blue {
+    background-color: #3F51B5;
+}
+
+img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 15px;
+}
+
+.div-chat {
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+}
+
+.div-bot {
+    flex-basis: 50%; 
+    padding: 0;
+}
+
+.div-user {
+    flex-basis: 50%; 
+    display: flex; 
+    justify-content: flex-end;
+     padding: 0;
+}
+
+.div-chat-content {
+    flex-basis: 90%; 
+    display: flex; 
+    flex-direction: row; 
+    margin: 15px
+}

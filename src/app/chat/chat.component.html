@@ -1,0 +1,12 @@
+<div class="div-chat">
+    <div class="div-chat-content" *ngFor="let message of messages" >
+        <div class="div-bot">
+            <label class="background-blue label-msg" *ngIf="message.botMsg == true">{{message.content}}</label>
+        </div>
+        <div class="div-user">
+            <label class="background-violet" *ngIf="message.botMsg == false && message.gif == false">{{message.content}}</label>
+            <img *ngIf="message.botMsg == false && message.gif == true" src="{{message.content}}"/>
+        </div>
+    </div>
+    <app-message-sender (sendMsgEvent)="sendMsg($event)"></app-message-sender>
+</div>

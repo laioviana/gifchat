@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Gifs Search</h1>
+   
+<div mat-dialog-content>
+  <mat-form-field color="accent">
+    <input matInput type="text" name="search" (keyup)="searchGif()" [(ngModel)]="search">
+    <mat-label>Gif name</mat-label>
+  </mat-form-field>
+  <mat-grid-list cols="4" rowHeight="150" > 
+    <mat-grid-tile *ngFor="let gif of gifs" rowspan="1" colspan="1"><img (click)="sendGif(gif)" src="{{gif}}"/></mat-grid-tile>
+  </mat-grid-list>
+</div>
